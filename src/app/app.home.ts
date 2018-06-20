@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
     selector: 'my-home',
     template: `
         <div class="container">
-        <a href="https://www.google.com/">Google</a>
+        <a href="https://www.google.com/">Google Search</a>
         </div>
     `
 })

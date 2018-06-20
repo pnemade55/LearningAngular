@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { AppHomeComponent } from './app.home';
+import { CarDashComponent } from './CarDashboard/CarDash.component';
 
 
 @NgModule({
@@ -11,11 +12,11 @@ import { AppHomeComponent } from './app.home';
   ],
   declarations: [
     AppComponent,
-    AppHomeComponent
+    AppHomeComponent,
+    CarDashComponent
   ],
   bootstrap: [
-    AppComponent,
-    AppHomeComponent
+    AppComponent
   ]
 })
 export class AppModule { }

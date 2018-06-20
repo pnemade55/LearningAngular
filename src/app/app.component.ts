@@ -5,9 +5,14 @@ import { Component } from '@angular/core';
     selector: 'my-app',
     template: `
         <div class="container">
-         Welcome to angular5
+
+          <h3>This is Angular 5</h3>
+
+          <car-dash></car-dash>
+
+          <my-home></my-home>
+
         </div>
-        <my-home></my-home>
     `
 })
 export class AppComponent { }
