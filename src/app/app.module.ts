@@ -5,7 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { AppHomeComponent } from './app.home';
 import { CarDashComponent } from './CarDashboard/CarDash.component';
-import { UpperValuePipe } from './CarDashboard/Filter.Car.pipe';
+import { UpperValuePipe } from './CarDashboard/UpperValue.pipe';
 
 
 @NgModule({
