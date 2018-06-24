@@ -7,9 +7,10 @@ import { Component } from '@angular/core';
 })
 
 export class CarDashComponent {
-  title: String= 'Welcome to Car Point';
+    title: String= 'Welcome to Car Point';
     showtable: Boolean= true;
     showImage: Boolean= false;
+    FilterData: String;
 
   cars: any[]= [
       {
@@ -17,6 +18,7 @@ export class CarDashComponent {
           brand: 'Ford',
           model: 'Mustang',
           year: 1985,
+          price: 200,
           image: 'https://vimg.remorainc.com/jll/1fa6p8th1j5107722/2018-ford-mustang-kona-blue-metallic-0-m.jpg',
           description: 'The Ford Mustang is an American car manufactured by Ford.'
       },
@@ -25,6 +27,7 @@ export class CarDashComponent {
           brand: 'Nissan',
           model: 'Altima',
           year: 2017,
+          price: 125,
           image: 'https://www.longviewnissan.com/assets/inventory/vehicles/1n4al3ap6jc218149/ip/thumbs/1-320.jpg',
           description: 'The Nissan Altima is a mid-size car which has been manufactured by Nissan since 1992'
       },
@@ -33,6 +36,7 @@ export class CarDashComponent {
           brand: 'Honda',
           model: 'City',
           year: 2017,
+          price: 10,
           image: 'https://imgd.aeplcdn.com/370x208/cw/ec/26755/Honda-City-Exterior-118804.jpg?wm=0&q=85)',
           description: 'The Honda City is a compact car which has been produced by the Japanese manufacturer Honda since 1981'
     }
@@ -41,6 +45,6 @@ export class CarDashComponent {
     this.showImage = !this.showImage;
   }
   toggleTable(): void {
-    this.showtable= !this.showtable;
+    this.showtable = !this.showtable;
   }
 }
