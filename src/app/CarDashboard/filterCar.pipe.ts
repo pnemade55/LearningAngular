@@ -5,8 +5,10 @@ import { ICar } from './car.model';
     name: 'carFilter'
 })
 
-export class ProductFilterPipe implements PipeTransform {
+export class CarFilterPipe implements PipeTransform {
     transform(value: ICar[], filterBy: string) {
-      return value;
+        filterBy = filterBy ? filterBy.toLowerCase() : null;
+        return filterBy ? value.filter((car: ICar) =>
+        car.model.toLowerCase().indexOf(filterBy) !== -1 ) : value;
       }
 }

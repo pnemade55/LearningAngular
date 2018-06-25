@@ -2,8 +2,8 @@ export interface ICar {
   carId: number;
   brand: string;
   model: string;
-  year: number;
+  rating: number;
   price: number;
-  imageUrl: string;
+  image: string;
   description: string;
 }

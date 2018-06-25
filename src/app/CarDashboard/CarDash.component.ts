@@ -3,7 +3,9 @@ import { Component } from '@angular/core';
 @Component({
   // tslint:disable-next-line:component-selector
   selector: 'car-dash',
-  templateUrl: './CarDash.component.html'
+  templateUrl: './CarDash.component.html',
+  styleUrls: ['./CarDash.component.css']
+
 })
 
 export class CarDashComponent {
@@ -11,13 +13,14 @@ export class CarDashComponent {
     showtable: Boolean= true;
     showImage: Boolean= false;
     FilterData: String;
+    imageWidth = 200;
 
   cars: any[]= [
       {
           id: 1,
           brand: 'Ford',
           model: 'Mustang',
-          year: 1985,
+          rating: 4.7,
           price: 200,
           image: 'https://vimg.remorainc.com/jll/1fa6p8th1j5107722/2018-ford-mustang-kona-blue-metallic-0-m.jpg',
           description: 'The Ford Mustang is an American car manufactured by Ford.'
@@ -26,21 +29,30 @@ export class CarDashComponent {
           id: 2,
           brand: 'Nissan',
           model: 'Altima',
-          year: 2017,
+          rating: 2.4,
           price: 125,
-          image: 'https://www.longviewnissan.com/assets/inventory/vehicles/1n4al3ap6jc218149/ip/thumbs/1-320.jpg',
+          image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7QL3zsiTJZ489ExB_bWgioyERusSSZbY7ijHciRRBndtfkP_kVg',
           description: 'The Nissan Altima is a mid-size car which has been manufactured by Nissan since 1992'
       },
       {
           id: 3,
           brand: 'Honda',
           model: 'City',
-          year: 2017,
-          price: 10,
+          rating: 4,
+          price: 11,
           image: 'https://imgd.aeplcdn.com/370x208/cw/ec/26755/Honda-City-Exterior-118804.jpg?wm=0&q=85)',
           description: 'The Honda City is a compact car which has been produced by the Japanese manufacturer Honda since 1981'
-    }
-  ];
+      },
+      {
+          id: 4,
+          brand: 'Maruti',
+          model: 'Ciaz',
+          rating: 3.5,
+          price: 10,
+          image: 'https://imgd.aeplcdn.com/370x208/cw/ec/26755/Honda-City-Exterior-118804.jpg?wm=0&q=85)',
+          description: 'The Suzuki Ciaz is a compact car produced by Suzuki, developed to replace the Suzuki SX4 Sedan.'
+      }
+    ];
   toggleImage(): void {
     this.showImage = !this.showImage;
   }

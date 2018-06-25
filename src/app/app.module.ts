@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { AppHomeComponent } from './app.home';
 import { CarDashComponent } from './CarDashboard/CarDash.component';
 import { UpperValuePipe } from './CarDashboard/UpperValue.pipe';
+import { CarFilterPipe } from './CarDashboard/filterCar.pipe';
+import { StarComponent } from './shared/star.component';
 
 
 @NgModule({
@@ -17,7 +19,9 @@ import { UpperValuePipe } from './CarDashboard/UpperValue.pipe';
     AppComponent,
     AppHomeComponent,
     CarDashComponent,
-    UpperValuePipe
+    UpperValuePipe,
+    CarFilterPipe,
+    StarComponent
   ],
   bootstrap: [
     AppComponent
